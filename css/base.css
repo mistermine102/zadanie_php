@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+  --primaryColor: rgb(29, 154, 154);
+  --primaryColorText: rgb(35, 186, 186);
+  --primaryColorHover: rgb(27, 122, 122);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+  color: white;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(30, 30, 30);
+  display: flex;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  background: none;
+  border: none;
+}
+
+.base-input {
+  background-color: rgb(41, 41, 41);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.base-btn,
+.base-btn-alt {
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.base-btn {
+  background-color: var(--primaryColor);
+  transition: background-color 150ms ease-in-out;
+}
+
+.base-btn-alt {
+  background-color: transparent;
+  border: 1px solid var(--primaryColor);
+  transition: color 150ms ease-in-out;
+}
+
+.base-btn:hover {
+  background-color: var(--primaryColorHover);
+}
+
+.base-btn-alt:hover {
+  color: var(--primaryColorText);
+}
+
+.error-message {
+  font-size: 0.9rem;
+  color: rgb(218, 51, 51);
+}
